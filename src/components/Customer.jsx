@@ -9,6 +9,7 @@ import c3 from '../assets/c3.png'
 import c4 from '../assets/c4.png'
 import c5 from '../assets/c5.png'
 import c6 from '../assets/c6.png'
+import { FaArrowRight } from "react-icons/fa";
 
 const Customer = () => {
   return (
@@ -27,7 +28,10 @@ const Customer = () => {
                         <Img src={c4}/>
                         <Img src={c5}/>
                         <Img src={c6}/>
-                        <h3 className='text-[#4CAF4F] text-xl font-semibold'>Meet all customers</h3>
+                        <Flex className=' items-center gap-2'>
+                            <h3 className='text-[#4CAF4F] text-xl font-semibold'>Meet all customers</h3>
+                            <FaArrowRight  className='text-[#4CAF4F]'/>
+                        </Flex>
                     </Flex>
                 </div>
             </Flex>
