@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className='bg-[#263238] py-16'>
         <Container>
-            <Flex>
+            <Flex className='gap-[125px] justify-between'>
                 <div className='w-[350px]'>
                     <Img src={footer}/>
                     <p className='mt-10 text-[#F5F7FA] text-sm font-normal'>Copyright © 2020 Nexcent ltd.</p>
@@ -26,26 +26,26 @@ const Footer = () => {
                         <CiYoutube className='text-white'/>
                     </Flex>
                 </div>
-                <Flex className='justify-between'>
-                    <List>
-                        <h2>Company</h2>
+                <Flex className='gap-[125px]'>
+                    <List className='text-[#F5F7FA] text-[14px] font-normal'>
+                        <h2 className='text-white text-sm font-semibold mb-6'>Company</h2>
                         <ListItem title='About us'/>
                         <ListItem title='Blog'/>
                         <ListItem title='Contact us'/>
                         <ListItem title='Pricing'/>
                         <ListItem title='Testimonials'/>
                     </List>
-                    <List>
-                        <h2>Support</h2>
+                    <List className='text-[#F5F7FA] text-[14px] font-normal'>
+                        <h2 className='text-white text-sm font-semibold mb-6'>Support</h2>
                         <ListItem title='Help center'/>
                         <ListItem title='Terms of service'/>
                         <ListItem title='Legal'/>
                         <ListItem title='Privacy policy'/>
                         <ListItem title='Status'/>
                     </List>
-                    <List>
-                        <h2>Stay up to date</h2>
-                        <input type='text'/>                    
+                    <List className='text-[#F5F7FA] text-[14px] font-normal'>
+                        <h2 className='text-white text-sm font-semibold mb-6'>Stay up to date</h2>
+                        <input type='text' className='w-[255px] h-[40px] bg-white opacity-20 rounded-lg text-[#D9DBE1] text-[14px] font-normal' placeholder='Your email address'/>                    
                     </List>
                 </Flex>
             </Flex>
